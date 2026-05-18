@@ -1,0 +1,86 @@
+CUSTOM WORLD CUP GROUPS
+============================================================
+
+Group A
+----------------------------------------
+Mexico (15) - Laura
+South Africa (60) - James
+South Korea (25) - Andrea
+Czechia (41) - Briony
+
+Group B
+----------------------------------------
+Canada (30) - Nora
+Boznia and Herzegovina (65) - Briony
+Qatar (55) - Chistine
+Switzerland (19) - Tom
+
+Group C
+----------------------------------------
+Brazil (6) - Nora
+Morocco (8) - Briony
+Haiti (83) - Natalie
+Scotland (43) - Andrea
+
+Group D
+----------------------------------------
+USA (16) - Paul
+Paraguay (40) - James
+Australia (27) - James
+Turkiye (22) - Linda
+
+Group E
+----------------------------------------
+Germany (10) - James
+Curacao (82) - Paul
+Ivory Coast (34) - Chistine
+Ecuador (23) - Briony
+
+Group F
+----------------------------------------
+Netherlands (7) - Paul
+Japan (18) - Kirsty
+Sweden (38) - John
+Tunisia (44) - Laura
+
+Group G
+----------------------------------------
+Belgium (9) - Chistine
+Egypt (29) - Paul
+Iran (21) - Natalie
+New Zealand (85) - Laura
+
+Group H
+----------------------------------------
+Spain (2) - Natalie
+Cape Verde (69) - Kirsty
+Saudi Arabia (61) - Andrea
+Uruguay (17) - John
+
+Group I
+----------------------------------------
+France (1) - Andrea
+Senegal (14) - Nora
+Iraq (57) - Linda
+Norway (31) - Kirsty
+
+Group J
+----------------------------------------
+Argentina (3) - Kirsty
+Algeria (28) - Natalie
+Austria (24) - Chistine
+Jordan (63) - Nora
+
+Group K
+----------------------------------------
+Portugal (5) - John
+DR Congo (46) - Tom
+Uzbekistan (50) - John
+Colombia (13) - Laura
+
+Group L
+----------------------------------------
+England (4) - Tom
+Croatia (11) - Linda
+Ghana (74) - Tom
+Panama (33) - Linda

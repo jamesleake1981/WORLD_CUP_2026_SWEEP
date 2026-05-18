@@ -1,0 +1,86 @@
+WORLD CUP GROUPS
+============================================================
+
+Group A
+------------------------------
+Belgium (Rank #9)
+Mexico (Rank #15)
+Paraguay (Rank #40)
+Cape Verde (Rank #69)
+
+Group B
+------------------------------
+Argentina (Rank #3)
+Uruguay (Rank #17)
+Ivory Coast (Rank #34)
+Curaçao (Rank #82)
+
+Group C
+------------------------------
+England (Rank #4)
+Switzerland (Rank #19)
+DR Congo (Rank #46)
+Ghana (Rank #74)
+
+Group D
+------------------------------
+France (Rank #1)
+Australia (Rank #27)
+Algeria (Rank #28)
+South Africa (Rank #60)
+
+Group E
+------------------------------
+Morocco (Rank #8)
+Türkiye (Rank #22)
+Czechia (Rank #41)
+Boznia and Herzegovina (Rank #65)
+
+Group F
+------------------------------
+Croatia (Rank #11)
+Japan (Rank #18)
+Canada (Rank #30)
+Iraq (Rank #57)
+
+Group G
+------------------------------
+Spain (Rank #2)
+South Korea (Rank #25)
+Tunisia (Rank #44)
+Uzbekistan (Rank #50)
+
+Group H
+------------------------------
+Columbia (Rank #13)
+Iran (Rank #21)
+Norway (Rank #31)
+New Zealand (Rank #85)
+
+Group I
+------------------------------
+Netherlands (Rank #7)
+Ecuador (Rank #23)
+Panama (Rank #33)
+Jordan (Rank #63)
+
+Group J
+------------------------------
+Germany (Rank #10)
+Senegal (Rank #14)
+Scotland (Rank #43)
+Qatar (Rank #55)
+
+Group K
+------------------------------
+Portugal (Rank #5)
+Austria (Rank #24)
+Sweden (Rank #38)
+Haiti (Rank #83)
+
+Group L
+------------------------------
+Brazil (Rank #6)
+USA (Rank #16)
+Egypt (Rank #29)
+Saudi Arabia (Rank #61)

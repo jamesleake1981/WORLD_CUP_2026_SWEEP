@@ -17,7 +17,7 @@ Team                           GP  PTS   GD   GF   GA   YC   RC          Owner
 ------------------------------------------------------------------------------------------
 Canada                          0    0    0    0    0    0    0           Nora
 Boznia and Herzegovina          0    0    0    0    0    0    0         Briony
-Qatar                           0    0    0    0    0    0    0       Chistine
+Qatar                           0    0    0    0    0    0    0      Christine
 Switzerland                     0    0    0    0    0    0    0            Tom
 
 Group C
@@ -44,7 +44,7 @@ Team                           GP  PTS   GD   GF   GA   YC   RC          Owner
 ------------------------------------------------------------------------------------------
 Germany                         0    0    0    0    0    0    0          James
 Curacao                         0    0    0    0    0    0    0           Paul
-Ivory Coast                     0    0    0    0    0    0    0       Chistine
+Ivory Coast                     0    0    0    0    0    0    0      Christine
 Ecuador                         0    0    0    0    0    0    0         Briony
 
 Group F
@@ -60,7 +60,7 @@ Group G
 ------------------------------------------------------------------------------------------
 Team                           GP  PTS   GD   GF   GA   YC   RC          Owner
 ------------------------------------------------------------------------------------------
-Belgium                         0    0    0    0    0    0    0       Chistine
+Belgium                         0    0    0    0    0    0    0      Christine
 Egypt                           0    0    0    0    0    0    0           Paul
 Iran                            0    0    0    0    0    0    0        Natalie
 New Zealand                     0    0    0    0    0    0    0          Laura
@@ -89,7 +89,7 @@ Team                           GP  PTS   GD   GF   GA   YC   RC          Owner
 ------------------------------------------------------------------------------------------
 Argentina                       0    0    0    0    0    0    0         Kirsty
 Algeria                         0    0    0    0    0    0    0        Natalie
-Austria                         0    0    0    0    0    0    0       Chistine
+Austria                         0    0    0    0    0    0    0      Christine
 Jordan                          0    0    0    0    0    0    0           Nora
 
 Group K

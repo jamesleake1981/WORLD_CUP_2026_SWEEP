@@ -1,6 +1,7 @@
 import re
 from collections import defaultdict
 from functools import cmp_to_key
+from matches import matches
 
 def compare(a, b):
     # points
@@ -48,15 +49,6 @@ OUTPUT_FILE = "custom_groups_sorted.txt"
 
 SORT_BY = "points"  # change to: "gd", "gf", "ga", "yc", "rc"
 
-# ==========================================
-# MATCHES
-# ==========================================
-
-matches = [
-    ("Mexico", 2, "South Africa", 1),
-    ("South Africa", 3, "South Korea", 0)
-
-	]
 
 h2h = defaultdict(lambda: defaultdict(lambda: {
     "points": 0,
@@ -73,41 +65,47 @@ stats = defaultdict(lambda: {
     "ga": 0,
     "points": 0,
     "yc": 0,
-    "rc": 0
+    "rc": 0,
+    "gp": 0
 })
 
 # ==========================================
 # CALCULATE FROM MATCHES
 # ==========================================
 
-for home, hg, away, ag in matches:
+for home, hg, away, ag, hyc, hrc, ayc, arc in matches:
 
-    # goals
+    stats[home]["gp"] += 1
+    stats[away]["gp"] += 1
+
+    # -------------------------
+    # GOALS
+    # -------------------------
     stats[home]["gf"] += hg
     stats[home]["ga"] += ag
 
     stats[away]["gf"] += ag
     stats[away]["ga"] += hg
 
-    # points
+    # -------------------------
+    # POINTS
+    # -------------------------
     if hg > ag:
         stats[home]["points"] += 3
-        h2h[home][away]["points"] += 3
     elif hg < ag:
         stats[away]["points"] += 3
-        h2h[away][home]["points"] += 3
     else:
         stats[home]["points"] += 1
         stats[away]["points"] += 1
-        h2h[home][away]["points"] += 1
-        h2h[away][home]["points"] += 1
 
-    # H2H goals
-    h2h[home][away]["gf"] += hg
-    h2h[home][away]["ga"] += ag
+    # -------------------------
+    # CARDS
+    # -------------------------
+    stats[home]["yc"] += hyc
+    stats[home]["rc"] += hrc
 
-    h2h[away][home]["gf"] += ag
-    h2h[away][home]["ga"] += hg
+    stats[away]["yc"] += ayc
+    stats[away]["rc"] += arc
 
 # ==========================================
 # READ FILE
@@ -156,6 +154,7 @@ for line in lines:
             "points": 0,
             "yc": 0,
             "rc": 0,
+	    "gp": 0
         })
 
 # ==========================================
@@ -181,7 +180,8 @@ for team_name, data in team_lookup.items():
             "ga": 0,
             "points": 0,
             "yc": 0,
-            "rc": 0
+            "rc": 0,
+            "gp": 0
         })
 
 # ==========================================
@@ -301,39 +301,51 @@ def sort_key(team):
 
 output = []
 output.append("CUSTOM WORLD CUP GROUPS (SORTED)")
-output.append("=" * 60)
+output.append("=" * 90)
 output.append(f"Sorted by: {SORT_BY.upper()}")
 
 for group_name, team_names in groups.items():
 
     output.append(f"\n{group_name}")
-    output.append("-" * 40)
+    output.append("-" * 90)
 
-    output.append(f"{'Team':<25}{'PTS':>5}{'GF':>5}{'GA':>5}{'GD':>5}{'YC':>5}{'RC':>5}{'Owner':>15}")
-    output.append("-" * 80)
     group_teams = []
-
     for name in team_names:
         if name in team_lookup:
             group_teams.append(team_lookup[name])
 
-    # Sort group
     group_teams.sort(key=cmp_to_key(compare))
-    #group_teams.sort(key=sort_key, reverse=True)
+
+    # HEADER (FIXED WIDTH)
+    output.append(
+        f"{'Team':<30}"
+        f"{'GP':>3}"
+        f"{'PTS':>5}"
+        f"{'GD':>5}"
+        f"{'GF':>5}"
+        f"{'GA':>5}"
+        f"{'YC':>5}"
+        f"{'RC':>5}"
+        f"{'Owner':>15}"
+    )
+
+    output.append("-" * 90)
 
     for t in group_teams:
         gd = t["gf"] - t["ga"]
 
         output.append(
-    		f"{t['team']:<25}"
-    		f"{t['points']:>5}"
-    		f"{t['gf']:>5}"
-    		f"{t['ga']:>5}"
-    		f"{gd:>5}"
-    		f"{t['yc']:>5}"
-    		f"{t['rc']:>5}"
-    		f"{t['owner']:>15}"
-	)
+            f"{t['team']:<30}"
+            f"{t['gp']:>3}"
+            f"{t['points']:>5}"
+            f"{gd:>5}"
+            f"{t['gf']:>5}"
+            f"{t['ga']:>5}"
+            f"{t['yc']:>5}"
+            f"{t['rc']:>5}"
+            f"{t['owner']:>15}"
+        )	
+
 
 # ==========================================
 # SAVE FILE

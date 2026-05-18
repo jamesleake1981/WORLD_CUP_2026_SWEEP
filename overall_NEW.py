@@ -1,4 +1,43 @@
 import re
+from collections import defaultdict
+from functools import cmp_to_key
+
+def compare(a, b):
+    # points
+    if a["points"] != b["points"]:
+        return b["points"] - a["points"]
+
+    # GD
+    gd_a = a["gf"] - a["ga"]
+    gd_b = b["gf"] - b["ga"]
+    if gd_a != gd_b:
+        return gd_b - gd_a
+
+    # GF
+    if a["gf"] != b["gf"]:
+        return b["gf"] - a["gf"]
+
+    # HEAD TO HEAD
+    team_a = a["team"]
+    team_b = b["team"]
+
+    h = h2h[team_a][team_b]
+
+    # if no match played, fallback stable
+    if h["points"] == 0 and h["gf"] == 0 and h["ga"] == 0:
+        return 0
+
+    # H2H points
+    if h["points"] != 0:
+        return -h["points"]
+
+    # H2H GD
+    h2h_gd = h["gf"] - h["ga"]
+    if h2h_gd != 0:
+        return -h2h_gd
+
+    # H2H GF
+    return -(h["gf"])
 
 # ==========================================
 # SETTINGS
@@ -8,6 +47,67 @@ INPUT_FILE = "final_draft.txt"
 OUTPUT_FILE = "custom_groups_sorted.txt"
 
 SORT_BY = "points"  # change to: "gd", "gf", "ga", "yc", "rc"
+
+# ==========================================
+# MATCHES
+# ==========================================
+
+matches = [
+    ("Mexico", 2, "South Africa", 1),
+    ("South Africa", 3, "South Korea", 0)
+
+	]
+
+h2h = defaultdict(lambda: defaultdict(lambda: {
+    "points": 0,
+    "gf": 0,
+    "ga": 0
+}))
+
+# ==========================================
+# INIT STATS
+# ==========================================
+
+stats = defaultdict(lambda: {
+    "gf": 0,
+    "ga": 0,
+    "points": 0,
+    "yc": 0,
+    "rc": 0
+})
+
+# ==========================================
+# CALCULATE FROM MATCHES
+# ==========================================
+
+for home, hg, away, ag in matches:
+
+    # goals
+    stats[home]["gf"] += hg
+    stats[home]["ga"] += ag
+
+    stats[away]["gf"] += ag
+    stats[away]["ga"] += hg
+
+    # points
+    if hg > ag:
+        stats[home]["points"] += 3
+        h2h[home][away]["points"] += 3
+    elif hg < ag:
+        stats[away]["points"] += 3
+        h2h[away][home]["points"] += 3
+    else:
+        stats[home]["points"] += 1
+        stats[away]["points"] += 1
+        h2h[home][away]["points"] += 1
+        h2h[away][home]["points"] += 1
+
+    # H2H goals
+    h2h[home][away]["gf"] += hg
+    h2h[home][away]["ga"] += ag
+
+    h2h[away][home]["gf"] += ag
+    h2h[away][home]["ga"] += hg
 
 # ==========================================
 # READ FILE
@@ -66,6 +166,23 @@ team_lookup = {}
 for owner, teams in people_teams.items():
     for t in teams:
         team_lookup[t["team"]] = t
+
+# ==========================================
+# ATTACH STATS TO YOUR TEAM LOOKUP
+# ==========================================
+
+for team_name, data in team_lookup.items():
+    if team_name in stats:
+        data.update(stats[team_name])
+    else:
+        # ensure defaults exist
+        data.update({
+            "gf": 0,
+            "ga": 0,
+            "points": 0,
+            "yc": 0,
+            "rc": 0
+        })
 
 # ==========================================
 # MANUALLY DEFINE GROUPS HERE
@@ -201,7 +318,8 @@ for group_name, team_names in groups.items():
             group_teams.append(team_lookup[name])
 
     # Sort group
-    group_teams.sort(key=sort_key, reverse=True)
+    group_teams.sort(key=cmp_to_key(compare))
+    #group_teams.sort(key=sort_key, reverse=True)
 
     for t in group_teams:
         gd = t["gf"] - t["ga"]
@@ -225,6 +343,7 @@ output_text = "\n".join(output)
 
 with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
     f.write(output_text)
+    f.write("\n") 
 
 print(output_text)
 print(f"\nSaved to {OUTPUT_FILE}")

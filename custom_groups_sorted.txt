@@ -6,10 +6,10 @@ Group A
 ----------------------------------------
 Team                       PTS   GF   GA   GD   YC   RC          Owner
 --------------------------------------------------------------------------------
-Mexico                       0    0    0    0    0    0          Laura
-South Africa                 0    0    0    0    0    0          James
-South Korea                  0    0    0    0    0    0         Andrea
+South Africa                 3    4    2    2    0    0          James
+Mexico                       3    2    1    1    0    0          Laura
 Czechia                      0    0    0    0    0    0         Briony
+South Korea                  0    0    3   -3    0    0         Andrea
 
 Group B
 ----------------------------------------

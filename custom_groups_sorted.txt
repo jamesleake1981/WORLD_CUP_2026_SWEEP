@@ -15,8 +15,8 @@ Group B
 ------------------------------------------------------------------------------------------
 Team                           GP  PTS   GD   GF   GA   YC   RC          Owner
 ------------------------------------------------------------------------------------------
-Canada                          0    0    0    0    0    0    0           Nora
-Boznia and Herzegovina          0    0    0    0    0    0    0         Briony
+Canada                          1    1    0    1    1    2    0           Nora
+Boznia and Herzegovina          1    1    0    1    1    3    0         Briony
 Qatar                           0    0    0    0    0    0    0      Christine
 Switzerland                     0    0    0    0    0    0    0            Tom
 
@@ -33,8 +33,8 @@ Group D
 ------------------------------------------------------------------------------------------
 Team                           GP  PTS   GD   GF   GA   YC   RC          Owner
 ------------------------------------------------------------------------------------------
-USA                             0    0    0    0    0    0    0           Paul
-Paraguay                        0    0    0    0    0    0    0          James
+USA                             1    1    0    0    0    0    0           Paul
+Paraguay                        1    1    0    0    0    0    0          James
 Australia                       0    0    0    0    0    0    0          James
 Turkiye                         0    0    0    0    0    0    0          Linda
 

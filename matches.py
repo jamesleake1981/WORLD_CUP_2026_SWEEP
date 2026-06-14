@@ -6,8 +6,8 @@ matches = [
     ("USA", 4, "Paraguay", 1, 1, 0, 5, 0),
     ("Qatar", 1, "Switzerland", 1, 2, 0, 1, 0), 
     ("Brazil", 1, "Morocco", 1, 2, 0, 0, 0),
-    ("Haiti", 0, "Scotland", 1, 1, 0, 3, 0) 
-    #("Australia", 0, "Turkey", 0, 0, 0, 0, 0),
+    ("Haiti", 0, "Scotland", 1, 1, 0, 3, 0), 
+    ("Australia", 2, "Turkiye", 0, 0, 0, 1, 0)
     #("Germany", 0, "Curacao", 0, 0, 0, 0, 0),
     #("Netherlands", 0, "Japan", 0, 0, 0, 0, 0),
     #("Ivory Coast", 0, "Ecuador", 0, 0, 0, 0, 0),

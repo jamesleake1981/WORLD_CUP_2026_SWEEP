@@ -34,8 +34,8 @@ Group D
 Team                           GP  PTS   GD   GF   GA   YC   RC          Owner
 ------------------------------------------------------------------------------------------
 USA                             1    3    3    4    1    1    0           Paul
-Australia                       0    0    0    0    0    0    0          James
-Turkiye                         0    0    0    0    0    0    0          Linda
+Australia                       1    3    2    2    0    0    0          James
+Turkiye                         1    0   -2    0    2    1    0          Linda
 Paraguay                        1    0   -3    1    4    5    0          James
 
 Group E

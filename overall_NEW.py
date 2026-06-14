@@ -359,3 +359,59 @@ with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
 
 print(output_text)
 print(f"\nSaved to {OUTPUT_FILE}")
+
+# ==========================================
+# BIGGEST UPSET
+# ==========================================
+
+rank_lookup = {
+    team["team"]: team["rank"]
+    for teams in people_teams.values()
+    for team in teams
+}
+
+biggest_upset = None
+biggest_diff = -1
+
+for home, hg, away, ag, *_ in matches:
+
+    # draws cannot be upsets
+    if hg == ag:
+        continue
+
+    if hg > ag:
+        winner = home
+        loser = away
+    else:
+        winner = away
+        loser = home
+
+    winner_rank = rank_lookup[winner]
+    loser_rank = rank_lookup[loser]
+
+    diff = winner_rank - loser_rank
+
+    # positive diff means lower-ranked team beat higher-ranked team
+    if diff > biggest_diff:
+        biggest_diff = diff
+        biggest_upset = (
+            winner,
+            winner_rank,
+            loser,
+            loser_rank,
+            diff
+        )
+
+if biggest_upset:
+    winner, winner_rank, loser, loser_rank, diff = biggest_upset
+
+    upset_text = (
+        f"\nBIGGEST UPSET\n"
+        f"{'=' * 40}\n"
+        f"{winner} (Rank #{winner_rank}) defeated "
+        f"{loser} (Rank #{loser_rank})\n"
+        f"Ranking difference: {diff}"
+    )
+
+    output.append(upset_text)
+    print(upset_text)

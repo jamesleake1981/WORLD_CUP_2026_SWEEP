@@ -3,10 +3,10 @@ matches = [
     ("Mexico", 2, "South Africa", 0, 1, 1, 2, 2),
     ("South Korea", 2, "Czechia", 1, 1, 0, 0, 0),
     ("Canada", 1, "Boznia and Herzegovina", 1, 2, 0, 3, 0),
-    ("USA", 4, "Paraguay", 1, 1, 0, 5, 0)
-    #("Qatar", 0, "Switzerland", 0, 0, 0, 0, 0), 
-    #("Brazil", 0, "Morocco", 0, 0, 0, 0, 0),
-    #("Haiti", 0, "Scotland", 0, 0, 0, 0, 0), 
+    ("USA", 4, "Paraguay", 1, 1, 0, 5, 0),
+    ("Qatar", 1, "Switzerland", 1, 2, 0, 1, 0), 
+    ("Brazil", 1, "Morocco", 1, 2, 0, 0, 0),
+    ("Haiti", 0, "Scotland", 1, 1, 0, 3, 0) 
     #("Australia", 0, "Turkey", 0, 0, 0, 0, 0),
     #("Germany", 0, "Curacao", 0, 0, 0, 0, 0),
     #("Netherlands", 0, "Japan", 0, 0, 0, 0, 0),

@@ -15,8 +15,8 @@ matches = [
     ("Spain", 0, "Cape Verde", 0, 1,0, 1,  0),
     ("Belgium", 1,  "Egypt", 1, 2, 0, 2, 0),
     ("Saudi Arabia", 1,  "Uruguay", 1, 1, 0, 0, 0),
-    ("Iran", 2, "New Zealand", 2, 1,  0, 0, 0)
-    #("France", 0, "Senegal", 0, 0, 0, 0, 0),
+    ("Iran", 2, "New Zealand", 2, 1,  0, 0, 0),
+    ("France", 3, "Senegal", 1, 0, 0, 0, 0)
     #("Iraq", 0, "Norway", 0, 0, 0, 0, 0),
     #("Argentina", 0, "Algeria", 0, 0, 0, 0, 0),
     #("Austria", 0, "Jordan", 0, 0, 0, 0, 0),

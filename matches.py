@@ -16,10 +16,10 @@ matches = [
     ("Belgium", 1,  "Egypt", 1, 2, 0, 2, 0),
     ("Saudi Arabia", 1,  "Uruguay", 1, 1, 0, 0, 0),
     ("Iran", 2, "New Zealand", 2, 1,  0, 0, 0),
-    ("France", 3, "Senegal", 1, 0, 0, 0, 0)
-    #("Iraq", 0, "Norway", 0, 0, 0, 0, 0),
-    #("Argentina", 0, "Algeria", 0, 0, 0, 0, 0),
-    #("Austria", 0, "Jordan", 0, 0, 0, 0, 0),
+    ("France", 3, "Senegal", 1, 0, 0, 0, 0),
+    ("Iraq", 1, "Norway", 4, 1, 0, 0, 0),
+    ("Argentina", 3, "Algeria", 0, 0, 0, 0, 0),
+    ("Austria", 3, "Jordan", 1, 1,  0, 0, 0)
     #("Portugal", 0, "DR Congo", 0, 0, 0, 0, 0),
     #("England", 0, "Croatia", 0, 0, 0, 0, 0),
     #("Ghana", 0, "Panama", 0, 0, 0, 0, 0),

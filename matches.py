@@ -28,7 +28,7 @@ matches = [
     ("Switzerland", 4, "Boznia and Herzegovina", 1, 1, 0, 2, 1),
     ("Canada", 6, "Qatar", 0, 1, 0, 1, 2),
     ("Mexico", 1, "South Korea", 0, 0, 0, 2, 0),
-    ("United States", 2, "Australia", 0, 3, 0, 4, 0),
+    ("USA", 2, "Australia", 0, 3, 0, 4, 0),
     ("Scotland", 0, "Morocco", 1, 1, 0, 1, 0),
     ("Brazil", 3, "Haiti", 0, 1, 0, 3, 0),
     ("Turkey", 0, "Paraguay", 1, 1, 0, 1, 1),

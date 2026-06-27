@@ -17,7 +17,7 @@ Team                           GP  PTS   GD   GF   GA   YC   RC          Owner
 ------------------------------------------------------------------------------------------
 Canada                          2    4    6    7    1    3    0           Nora
 Switzerland                     2    4    3    5    2    2    0            Tom
-Boznia and Herzegovina          1    1    0    1    1    3    0         Briony
+Boznia and Herzegovina          2    1   -3    2    5    5    1         Briony
 Qatar                           2    1   -6    1    7    3    2      Christine
 
 Group C

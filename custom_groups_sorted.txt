@@ -6,28 +6,28 @@ Group A
 ------------------------------------------------------------------------------------------
 Team                           GP  PTS   GD   GF   GA   YC   RC          Owner
 ------------------------------------------------------------------------------------------
-Mexico                          2    6    3    3    0    1    1          Laura
-South Korea                     2    3    0    2    2    3    0         Andrea
-Czechia                         2    1   -1    2    3    1    0         Briony
-South Africa                    2    1   -2    1    3    4    2          James
+Mexico                          3    9    6    6    0    2    1          Laura
+South Africa                    3    4   -1    2    3    5    2          James
+South Korea                     3    3   -1    2    3    4    0         Andrea
+Czechia                         3    1   -4    2    6    1    0         Briony
 
 Group B
 ------------------------------------------------------------------------------------------
 Team                           GP  PTS   GD   GF   GA   YC   RC          Owner
 ------------------------------------------------------------------------------------------
-Canada                          2    4    6    7    1    3    0           Nora
-Switzerland                     2    4    3    5    2    2    0            Tom
-Boznia and Herzegovina          2    1   -3    2    5    5    1         Briony
-Qatar                           2    1   -6    1    7    3    2      Christine
+Switzerland                     3    7    4    7    3    3    0            Tom
+Canada                          3    4    5    8    3    5    0           Nora
+Boznia and Herzegovina          3    4   -1    5    6    6    1         Briony
+Qatar                           3    1   -8    2   10    4    2      Christine
 
 Group C
 ------------------------------------------------------------------------------------------
 Team                           GP  PTS   GD   GF   GA   YC   RC          Owner
 ------------------------------------------------------------------------------------------
-Brazil                          2    4    3    4    1    3    0           Nora
-Morocco                         2    4    1    2    1    1    0         Briony
-Scotland                        2    3    0    1    1    4    0         Andrea
-Haiti                           2    0   -4    0    4    4    0        Natalie
+Brazil                          3    7    6    7    1    5    0           Nora
+Morocco                         3    7    3    6    3    1    0         Briony
+Scotland                        3    3   -3    1    4    5    0         Andrea
+Haiti                           3    0   -6    2    8    7    0        Natalie
 
 Group D
 ------------------------------------------------------------------------------------------
@@ -42,70 +42,70 @@ Group E
 ------------------------------------------------------------------------------------------
 Team                           GP  PTS   GD   GF   GA   YC   RC          Owner
 ------------------------------------------------------------------------------------------
-Germany                         2    6    7    9    2    0    0          James
-Ivory Coast                     2    3    0    2    2    3    0      Christine
-Ecuador                         2    1   -1    0    1    2    0         Briony
-Curacao                         2    1   -6    1    7    5    0           Paul
+Germany                         3    6    6   10    4    1    0          James
+Ivory Coast                     3    6    2    4    2    4    0      Christine
+Ecuador                         3    4    0    2    2    5    0         Briony
+Curacao                         3    1   -8    1    9    7    0           Paul
 
 Group F
 ------------------------------------------------------------------------------------------
 Team                           GP  PTS   GD   GF   GA   YC   RC          Owner
 ------------------------------------------------------------------------------------------
-Netherlands                     2    4    4    7    3    3    0           Paul
+Netherlands                     3    7    6   10    4    3    0           Paul
 Japan                           2    4    4    6    2    0    0         Kirsty
 Sweden                          2    3    0    6    6    3    0           John
-Tunisia                         2    0   -8    1    9    1    0          Laura
+Tunisia                         3    0  -10    2   12    1    0          Laura
 
 Group G
 ------------------------------------------------------------------------------------------
 Team                           GP  PTS   GD   GF   GA   YC   RC          Owner
 ------------------------------------------------------------------------------------------
+Egypt                           2    4    2    4    2    3    0           Paul
 Iran                            2    2    0    2    2    2    0        Natalie
 Belgium                         2    2    0    1    1    3    1      Christine
-New Zealand                     1    1    0    2    2    0    0          Laura
-Egypt                           1    1    0    1    1    2    0           Paul
+New Zealand                     2    1   -2    3    5    2    0          Laura
 
 Group H
 ------------------------------------------------------------------------------------------
 Team                           GP  PTS   GD   GF   GA   YC   RC          Owner
 ------------------------------------------------------------------------------------------
 Spain                           2    4    4    4    0    1    0        Natalie
-Uruguay                         1    1    0    1    1    0    0           John
-Cape Verde                      1    1    0    0    0    1    0         Kirsty
+Uruguay                         2    2    0    3    3    2    0           John
+Cape Verde                      2    2    0    2    2    3    0         Kirsty
 Saudi Arabia                    2    1   -4    1    5    3    0         Andrea
 
 Group I
 ------------------------------------------------------------------------------------------
 Team                           GP  PTS   GD   GF   GA   YC   RC          Owner
 ------------------------------------------------------------------------------------------
-Norway                          1    3    3    4    1    0    0         Kirsty
-France                          1    3    2    3    1    0    0         Andrea
-Senegal                         1    0   -2    1    3    0    0           Nora
-Iraq                            1    0   -3    1    4    1    0          Linda
+France                          2    6    5    6    1    0    0         Andrea
+Norway                          2    6    4    7    3    0    0         Kirsty
+Senegal                         2    0   -3    3    6    0    0           Nora
+Iraq                            2    0   -6    1    7    2    0          Linda
 
 Group J
 ------------------------------------------------------------------------------------------
 Team                           GP  PTS   GD   GF   GA   YC   RC          Owner
 ------------------------------------------------------------------------------------------
-Argentina                       1    3    3    3    0    0    0         Kirsty
-Austria                         1    3    2    3    1    1    0      Christine
-Jordan                          1    0   -2    1    3    0    0           Nora
-Algeria                         1    0   -3    0    3    0    0        Natalie
+Argentina                       2    6    5    5    0    2    0         Kirsty
+Austria                         2    3    0    3    3    3    0      Christine
+Algeria                         2    3   -2    2    4    1    0        Natalie
+Jordan                          2    0   -3    2    5    1    0           Nora
 
 Group K
 ------------------------------------------------------------------------------------------
 Team                           GP  PTS   GD   GF   GA   YC   RC          Owner
 ------------------------------------------------------------------------------------------
-Colombia                        1    3    2    3    1    1    0          Laura
-Portugal                        1    1    0    1    1    3    0           John
-DR Congo                        1    1    0    1    1    1    0            Tom
-Uzbekistan                      1    0   -2    1    3    1    0           John
+Colombia                        2    6    3    4    1    3    0          Laura
+Portugal                        2    4    5    6    1    4    0           John
+DR Congo                        2    1   -1    1    2    2    0            Tom
+Uzbekistan                      2    0   -7    1    8    2    0           John
 
 Group L
 ------------------------------------------------------------------------------------------
 Team                           GP  PTS   GD   GF   GA   YC   RC          Owner
 ------------------------------------------------------------------------------------------
-England                         1    3    2    4    2    0    0            Tom
-Ghana                           1    3    1    1    0    1    0            Tom
-Panama                          1    0   -1    0    1    2    0          Linda
-Croatia                         1    0   -2    2    4    0    0          Linda
+England                         2    4    2    4    2    1    0            Tom
+Ghana                           2    4    1    1    0    2    0            Tom
+Croatia                         2    3   -1    3    4    1    0          Linda
+Panama                          2    0   -2    0    2    3    0          Linda

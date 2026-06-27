@@ -56,7 +56,7 @@ matches = [
     ("South Africa", 1, "South Korea", 0, 1, 0, 1, 0),
     ("Ecuador", 2, "Germany", 1, 3, 0, 1, 0),
     ("Curacao", 0, "Ivory Coast", 2, 2, 0, 1, 0),
-    ("Tunisia", 1, "Netherlands", 3, 0, 0, 0, 0)
+    ("Tunisia", 1, "Netherlands", 3, 0, 0, 0, 0),
     ("Japan", 1, "Sweden", 1, 1, 0, 2, 0),
     ("Turkiye", 3, "USA", 2, 0, 0, 1, 0),
     ("Paraguay", 0, "Australia", 0, 1, 0, 1, 0),

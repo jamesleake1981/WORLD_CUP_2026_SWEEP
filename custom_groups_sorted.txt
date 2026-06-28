@@ -109,3 +109,52 @@ England                         3    7    4    6    2    2    0            Tom
 Croatia                         3    6    0    5    5    2    0          Linda
 Ghana                           3    4    0    2    2    3    0            Tom
 Panama                          3    0   -4    0    4    5    0          Linda
+
+==========================================================================================
+ROUND OF 32 QUALIFIERS
+==========================================================================================
+
+GROUP WINNERS
+Group A  Mexico                    Laura
+Group B  Switzerland               Tom
+Group C  Brazil                    Nora
+Group D  USA                       Paul
+Group E  Germany                   James
+Group F  Netherlands               Paul
+Group G  Belgium                   Christine
+Group H  Spain                     Natalie
+Group I  France                    Andrea
+Group J  Argentina                 Kirsty
+Group K  Colombia                  Laura
+Group L  England                   Tom
+
+RUNNERS-UP
+Group A  South Africa              James
+Group B  Canada                    Nora
+Group C  Morocco                   Briony
+Group D  Australia                 James
+Group E  Ivory Coast               Christine
+Group F  Japan                     Kirsty
+Group G  Egypt                     Paul
+Group H  Cape Verde                Kirsty
+Group I  Norway                    Kirsty
+Group J  Austria                   Christine
+Group K  Portugal                  John
+Group L  Croatia                   Linda
+
+BEST THIRD-PLACED TEAMS
+ 1. DR Congo                  Tom
+ 2. Sweden                    John
+ 3. Ecuador                   Briony
+ 4. Ghana                     Tom
+ 5. Boznia and Herzegovina    Briony
+ 6. Algeria                   Natalie
+ 7. Paraguay                  James
+ 8. Senegal                   Nora
+
+==========================================================================================
+GROUP STAGE AWARDS
+==========================================================================================
+Best record eliminated : Iran (Natalie)
+Most goals conceded    : Tunisia (Laura) - 12
+Lowest-ranked qualifier: Ghana (Tom) - Rank #74

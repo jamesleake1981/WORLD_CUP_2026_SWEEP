@@ -347,6 +347,59 @@ for group_name, team_names in groups.items():
         )	
 
 
+
+# ==========================================
+# ROUND OF 32 + AWARDS
+# ==========================================
+group_results={}
+third_place=[]
+fourth_place=[]
+qualifiers=[]
+
+for group_name, team_names in groups.items():
+    gt=[team_lookup[n] for n in team_names if n in team_lookup]
+    gt.sort(key=cmp_to_key(compare))
+    group_results[group_name]=gt
+    qualifiers.extend(gt[:2])
+    third_place.append(gt[2])
+    fourth_place.append(gt[3])
+
+third_place.sort(key=cmp_to_key(compare))
+best_third=third_place[:8]
+qualifiers.extend(best_third)
+
+output.append("")
+output.append("="*90)
+output.append("ROUND OF 32 QUALIFIERS")
+output.append("="*90)
+output.append("")
+output.append("GROUP WINNERS")
+for g,t in group_results.items():
+    output.append(f"{g:<8} {t[0]['team']:<25} {t[0]['owner']}")
+output.append("")
+output.append("RUNNERS-UP")
+for g,t in group_results.items():
+    output.append(f"{g:<8} {t[1]['team']:<25} {t[1]['owner']}")
+output.append("")
+output.append("BEST THIRD-PLACED TEAMS")
+for i,t in enumerate(best_third,1):
+    output.append(f"{i:2}. {t['team']:<25} {t['owner']}")
+
+elim=third_place[8:]+fourth_place
+elim.sort(key=cmp_to_key(compare))
+best_elim=elim[0]
+most_conceded=max(team_lookup.values(),key=lambda x:x['ga'])
+lowest=max(qualifiers,key=lambda x:x['rank'])
+
+output.append("")
+output.append("="*90)
+output.append("GROUP STAGE AWARDS")
+output.append("="*90)
+output.append(f"Best record eliminated : {best_elim['team']} ({best_elim['owner']})")
+output.append(f"Most goals conceded    : {most_conceded['team']} ({most_conceded['owner']}) - {most_conceded['ga']}")
+output.append(f"Lowest-ranked qualifier: {lowest['team']} ({lowest['owner']}) - Rank #{lowest['rank']}")
+
+
 # ==========================================
 # SAVE FILE
 # ==========================================
@@ -359,6 +412,7 @@ with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
 
 print(output_text)
 print(f"\nSaved to {OUTPUT_FILE}")
+print("\n".join(output[-30:]))
 
 # ==========================================
 # BIGGEST UPSET
@@ -416,60 +470,4 @@ if biggest_upset:
     output.append(upset_text)
     print(upset_text)
 
-
-# ==========================================
-# ROUND OF 32 + GROUP STAGE AWARDS
-# ==========================================
-
-group_results = {}
-third_place = []
-fourth_place = []
-qualifiers = []
-
-for group_name, team_names in groups.items():
-    ordered = [team_lookup[n] for n in team_names if n in team_lookup]
-    ordered.sort(key=cmp_to_key(compare))
-    group_results[group_name] = ordered
-    qualifiers.extend(ordered[:2])
-    third_place.append(ordered[2])
-    fourth_place.append(ordered[3])
-
-third_place.sort(key=cmp_to_key(compare))
-best_third = third_place[:8]
-qualifiers.extend(best_third)
-
-output.append("")
-output.append("="*90)
-output.append("ROUND OF 32 QUALIFIERS")
-output.append("="*90)
-
-output.append("Group Winners")
-for g,t in group_results.items():
-    output.append(f"{g}: {t[0]['team']} ({t[0]['owner']})")
-
-output.append("")
-output.append("Runners-up")
-for g,t in group_results.items():
-    output.append(f"{g}: {t[1]['team']} ({t[1]['owner']})")
-
-output.append("")
-output.append("Best Third Place Teams")
-for i,t in enumerate(best_third,1):
-    output.append(f"{i}. {t['team']} ({t['owner']})")
-
-eliminated = third_place[8:] + fourth_place
-eliminated.sort(key=cmp_to_key(compare))
-best_elim = eliminated[0]
-most_conceded = max(team_lookup.values(), key=lambda x:x["ga"])
-lowest_rank_q = max(qualifiers, key=lambda x:x["rank"])
-
-output.append("")
-output.append("="*90)
-output.append("GROUP STAGE AWARDS")
-output.append("="*90)
-output.append(f"Best record eliminated: {best_elim['team']} ({best_elim['owner']})")
-output.append(f"Most goals conceded: {most_conceded['team']} ({most_conceded['owner']}) - {most_conceded['ga']}")
-output.append(f"Lowest ranked qualifier: {lowest_rank_q['team']} ({lowest_rank_q['owner']}) - Rank #{lowest_rank_q['rank']}")
-
-print("\\n".join(output))
 

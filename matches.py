@@ -71,5 +71,5 @@ matches = [
     ("Colombia", 0, "Portugal", 0, 1, 0, 0, 0),
     ("DR Congo", 3, "Uzbekistan", 1, 3, 0, 2, 0),
     ("Jordan", 1, "Argentina", 3, 3, 0, 0, 0),
-    ("Algeria", 3, "Austria", 3, 3, 0, , 0)
+    ("Algeria", 3, "Austria", 3, 3, 0, 0, 0)
         ]

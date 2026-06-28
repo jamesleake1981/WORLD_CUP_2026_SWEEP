@@ -472,3 +472,4 @@ output.append(f"Most goals conceded: {most_conceded['team']} ({most_conceded['ow
 output.append(f"Lowest ranked qualifier: {lowest_rank_q['team']} ({lowest_rank_q['owner']}) - Rank #{lowest_rank_q['rank']}")
 
 print("\\n".join(output))
+

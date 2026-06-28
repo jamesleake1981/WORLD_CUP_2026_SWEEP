@@ -65,7 +65,7 @@ matches = [
     ("Uruguay", 0, "Spain", 1, 3, 1, 1, 0),
     ("Cape Verde", 0, "Saudi Arabia", 0, 1, 0, 3, 0),
     ("New Zealand", 1, "Belgium", 5, 2, 0, 0, 0),
-    ("Egypt", 1, "Iran", 1, 3, 0, 4, 0)
+    ("Egypt", 1, "Iran", 1, 3, 0, 4, 0),
     ("Panama", 0, "England", 2, 2, 0, 1, 0),
     ("Croatia", 2, "Ghana", 1, 1, 0, 1, 0),
     ("Colombia", 0, "Portugal", 0, 1, 0, 0, 0),
